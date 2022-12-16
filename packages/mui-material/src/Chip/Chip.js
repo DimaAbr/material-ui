@@ -181,7 +181,7 @@ const ChipRoot = styled('div', {
         [`&.${chipClasses.focusVisible}`]: {
           backgroundColor: theme.vars
             ? `rgba(${theme.vars.palette.action.selectedChannel} / calc(${
-                theme.vars.palette.action.selectedOpacity + theme.vars.palette.action.focusOpacity
+                theme.vars.palette.action.selectedOpacity} + ${theme.vars.palette.action.focusOpacity
               }))`
             : alpha(
                 theme.palette.action.selected,
@@ -205,7 +205,7 @@ const ChipRoot = styled('div', {
       '&:hover': {
         backgroundColor: theme.vars
           ? `rgba(${theme.vars.palette.action.selectedChannel} / calc(${
-              theme.vars.palette.action.selectedOpacity + theme.vars.palette.action.hoverOpacity
+              theme.vars.palette.action.selectedOpacity} + ${theme.vars.palette.action.hoverOpacity
             }))`
           : alpha(
               theme.palette.action.selected,
@@ -215,7 +215,7 @@ const ChipRoot = styled('div', {
       [`&.${chipClasses.focusVisible}`]: {
         backgroundColor: theme.vars
           ? `rgba(${theme.vars.palette.action.selectedChannel} / calc(${
-              theme.vars.palette.action.selectedOpacity + theme.vars.palette.action.focusOpacity
+              theme.vars.palette.action.selectedOpacity} + ${theme.vars.palette.action.focusOpacity
             }))`
           : alpha(
               theme.palette.action.selected,
